@@ -1,0 +1,10 @@
+	.som_adminButtons td{
+		text-align:center;
+		width:33%;
+		height:100px;
+		padding-top:40px;
+		border:1px solid red; 
+		}
+	.som_adminButtons td:hover{
+	border: 2px solid green;
+	}
