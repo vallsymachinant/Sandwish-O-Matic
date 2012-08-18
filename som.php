@@ -9,11 +9,15 @@ Version: 0.2
 License: ALL RIGHT RESERVED Valls y Machinant David
 */
 	$siteurl = get_option('siteurl');
-	$url = $siteurl . '/wp-content/plugins/' . basename(dirname(__FILE__)) . '/som_style.css';
-
-	include_once '/somclass/administration.php';
-	include_once '/somclass/users.php';
-	
+	$url = $siteurl . '/wp-content/plugins/' . basename(dirname(__FILE__));
+	$url_style = $siteurl . '/wp-content/plugins/' . basename(dirname(__FILE__)) . '/som_style.css';
+/*
+	echo dirname(__FILE__) .'somclass/administration.php';
+	echo'<br>';
+	echo dirname(__FILE__) .'somclass/users.php';
+	*/
+	include_once dirname(__FILE__) .'/somclass/administration.php';
+	include_once dirname(__FILE__) .'/somclass/users.php';
 	
 	function som_uninstall(){
 		try{

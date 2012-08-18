@@ -9,7 +9,8 @@ class somclass_administration {
 	}
 	
 	public  function som_adminPanel(){
-		include($this->url . 'views/som_adminPanel.php');
+		//echo(dirname(__FILE__). '/../views/som_adminPanel.php');
+		include(dirname(__FILE__). '/../views/som_adminPanel.php');
 	}
 	
 	function Configuremenu() {
@@ -35,23 +36,23 @@ class somclass_administration {
 	}
 	//Sous menu : Options générales
 	public function som_adminPanelBasicOptions(){
-		include($this->url . 'views/som_adminPanelBasicOptions.php');
+		include(dirname(__FILE__). '/../views/som_adminPanelBasicOptions.php');
 	}
 	//Sous menu : Gestion des produits
 	public function som_adminPanelProductOptions(){
-		include($this->url . 'views/som_adminPanelProductOptions.php');
+		include(dirname(__FILE__). '/../views/som_adminPanelProductOptions.php');
 	}
 	//Sous menu : Gestion des commandes
 	public function som_adminPanelOrderManagement(){
-		include($this->url . 'views/som_adminPanelOrderManagement.php');
+		include(dirname(__FILE__). '/../views/som_adminPanelOrderManagement.php');
 	}
 	//Sous menu : Gestion des clients
 	public function som_adminPanelCustomerManagement(){
-		include($this->url . 'views/som_adminPanelCustomerManagement.php');
+		include(dirname(__FILE__). '/../views/som_adminPanelCustomerManagement.php');
 	}
 	//Sous menu : Suivi des clients
 	public function som_adminPanelCustomerTracking(){
-		include($this->url . 'views/som_adminPanelCustomerTracking.php');
+		include(dirname(__FILE__). '/../views/som_adminPanelCustomerTracking.php');
 	}
 	//Insère le CSS du paneau d'administration
 	public function som_css_javascript() {
