@@ -1,12 +1,7 @@
 <?php
 class somclass_administration {
 
-	public $url;
 	
-	public function __construct() {
-		//$this->url = get_option('siteurl') . '/wp-content/plugins/';
-		$this->url = '/../';
-	}
 	
 	public  function som_adminPanel(){
 		//echo(dirname(__FILE__). '/../views/som_adminPanel.php');
@@ -56,7 +51,6 @@ class somclass_administration {
 	}
 	//Insère le CSS du paneau d'administration
 	public function som_css_javascript() {
-		$url = $this->url . 'som_style.css';
-		echo '<link href="'.$url.'" rel="stylesheet" type="text/css" />';
+		echo '<link href="'. WP_PLUGIN_URL .'/Sandwish-O-Matic/som_style.css" rel="stylesheet" type="text/css" />';
 	}
 }
